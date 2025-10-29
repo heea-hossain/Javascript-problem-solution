@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Price</title>
+</head>    
+<body>
+<p id="demo"></p>
+
+<script>
+        let age = parseInt(prompt("Enter your age: "));
+        let gender = prompt("Enter your gender (Male/Female): ");
+
+        let ticketPrice;
+
+        if (age < 12) {
+            ticketPrice = 50;  
+        } else if (age >= 12 && age < 60) {
+            if (gender    === "female") {
+                ticketPrice = 80;   
+            } else {
+                ticketPrice = 100;  
+            }
+        } else {
+            ticketPrice = 70;  
+        }
+
+        document.getElementById("demo").innerHTML=("Your ticket price is: " + ticketPrice + " taka");
+        
+        </script>
+
+</body>
+</html>
